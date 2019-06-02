@@ -1,0 +1,17 @@
+---
+published: true
+layout: post
+title: "Anto59290 blog posts"
+category: jekyll
+author: Anto59290
+---
+
+Here are some writing of my own: 
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+      <p>{{ post.excerpt }}</p>
+    </li>
+  {% endfor %}
+</ul>
