@@ -65,7 +65,9 @@ If you want to work on a specific page of your application but that Django debug
 then you might want to try this solution.
 This is the kind of results we are talking about:
 
+<a href="{{ "/images/local_apm.png" | relative_url }}">
 ![A timeline of an APM tool]({{ "/images/local_apm.png" | relative_url }})
+</a>
 
 To get this mini local APM working you need to:
 
@@ -122,7 +124,8 @@ my go-to tools are cProfile and snakeviz. To do so:
 
 This will give you an HTML page similar to this:
 
+<a href="{{ "/images/snakeviz.png" | relative_url }}">
 ![Snakeviz]({{ "/images/snakeviz.png" | relative_url }})
-
+</a>
 
 
