@@ -65,12 +65,14 @@ If you want to work on a specific page of your application but that Django debug
 then you might want to try this solution.
 This is the kind of results we are talking about:
 
-![A timeline of an APM tool]({{ site.baseurl }}images/local_apm.png)
+![A timeline of an APM tool]({{ "/images/local_apm.png" | relative_url }})
 
 To get this mini local APM working you need to:
 
 - Install pyinstrument: `pip install pyinstrument`
 - Add this middleware to a middleware file:
+
+
 ```py
 
 from pyinstrument import Profiler
@@ -120,7 +122,7 @@ my go-to tools are cProfile and snakeviz. To do so:
 
 This will give you an HTML page similar to this:
 
-![Snakeviz]({{ site.baseurl }}images/snakeviz.png)
+![Snakeviz]({{ "/images/snakeviz.png" | relative_url }})
 
 
 
